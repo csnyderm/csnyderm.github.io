@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" class="dark">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   </head>
-  <body>
-    <div class="text-center text-red-500 text-2xl">Hello World</div>
-    {{ content }}
+  <body class="dark:bg-black static">
+    <div class="container-lg">
+      <div class="dark:bg-slate-800 text-center text-white"> 
+        {{content}}</div>
+      <div class="bg-fixed headingBG bg-no-repeat bg-cover bg-contain"></div>
+    </div>
+    <div class="dark:bg-slate-800 text-center text-red-500 text-2xl mx-auto">
+      <p>Hello World</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      {{ content }}
+    </div>
+    
   </body>
 </html>

@@ -4,3 +4,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "tailwindcss/base";
+
+.headingBG {
+    background-image: url('{{ site.baseurl }}/assets/images/ColoradoSpringsWide2.png');
+    width: 100vw;
+    height: 500px;
+}
