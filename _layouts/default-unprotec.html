@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}" class="dark">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body class="dark:bg-black static">
+    <div class="container-lg relative">
+      <div class="dark:bg-slate-800 text-center text-white mx-auto w-9/12 static"> 
+        {{content}}
+      </div>
+
+      <div class="headingBG bg-no-repeat bg-cover bg-center bg-top z-0 mx-auto">
+        <div class="opacity-100 text-white text-center z-10">
+          <h1>hello</h1>
+        </div>
+      </div>
+
+    </div>
+    <div class="dark:bg-slate-800 text-center text-red-500 text-2xl mx-auto w-9/12">
+      <p>Hello World</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      {{ content }}
+    </div>
+    
+  </body>
+</html>
