@@ -2611,7 +2611,7 @@ input, select, textarea {
 		position: fixed;
 		/*text-align: right;*/
 		top: 2em;
-		width: 40%;
+		width: 30%;
 	}
 
 		#header > * {
@@ -2649,7 +2649,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			/*margin: 0 0 1em 0;*/
-			width: 3em;
+			width: 2em;
 		}
 
 /* Footer */
@@ -3027,7 +3027,7 @@ input, select, textarea {
 
 				#header .image.avatar {
 					/*margin: 0 0 1em 0;*/
-					width: 3em;
+					width: 2em;
 				}
 
 		/* Footer */
