@@ -2164,6 +2164,12 @@ input, select, textarea {
 		padding-left: 1em;
 	}
 
+		ul a:hover {
+		border-bottom-color: transparent;
+		color: #FFD700 !important;
+		text-decoration: none;
+		}
+
 		ul li {
 			padding-left: 0.5em;
 		}

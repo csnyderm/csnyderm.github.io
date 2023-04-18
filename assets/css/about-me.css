@@ -24,11 +24,25 @@
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	border: white 1px double;
-	text-align: center;
-	margin-right: 5em;
-	left: 0;
+	text-align: left;
 	margin-left: 5em;
+	margin-right: 5em;
+	padding: 1rem 1rem 0rem 1rem;
+	left: 0;
   }
+
+.footer {
+	background-attachment: scroll;
+	background-color: #1f1815;
+	background-image: url("images/overlay.png"), /*url("../../images/bg.jpg")*/;
+	background-position: top left,						bottom center;
+	background-repeat: repeat,							no-repeat;
+	background-size: auto,							cover;
+	padding: 2em 2em 1em 2em;
+	/*position: relative;*/
+	text-align: center;
+	width: 100%;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2634,7 +2648,6 @@ input, select, textarea {
 		position: fixed;
 		/*text-align: right;*/
 		top: 2em;
-		width: 30%;
 	}
 
 		#header > * {
@@ -2675,7 +2688,7 @@ input, select, textarea {
 			width: 2em;
 		}
 
-/* Footer */
+/* Footer 
 
 	#footer .icons {
 		margin: 1em 0 0 0;
@@ -2710,6 +2723,7 @@ input, select, textarea {
 			#footer .copyright li a {
 				color: inherit;
 			}
+*/
 
 /* Main */
 
@@ -3031,9 +3045,9 @@ input, select, textarea {
 
 			#header {
 				padding: 1em 2em 1em 2em;
-				width: 40%;
 				left: 50%;
 				transform: translate(-50%, 0);
+				top: 2em;
 			}
 
 				#header h1 {
@@ -3102,7 +3116,6 @@ input, select, textarea {
 				position: fixed;
 				text-align: center;
 				top: 0;
-				width: 40%;
 				display: block;
 				left: 50%;
 				transform: translate(-50%, 0);
@@ -3116,38 +3129,6 @@ input, select, textarea {
 						display: inline;
 					}
 
-		/* Footer */
-
-			#footer {
-				background-attachment: scroll;
-				background-color: #1f1815;
-				background-image: url("images/overlay.png"), /*url("../../images/bg.jpg")*/;
-				background-position: top left,						bottom center;
-				background-repeat: repeat,							no-repeat;
-				background-size: auto,							cover;
-				bottom: auto;
-				left: auto;
-				padding: 4em 4em 6em 4em;
-				/*position: relative;*/
-				text-align: center;
-				width: 100%;
-			}
-
-				#footer .icons {
-					margin: 0 0 1em 0;
-				}
-
-				#footer .copyright {
-					margin: 0 0 1em 0;
-				}
-
-					#footer .copyright li {
-						border-left-width: 1px;
-						display: inline-block;
-						line-height: 1em;
-						margin-left: 0.75em;
-						padding-left: 0.75em;
-					}
 
 		/* Main */
 
@@ -3201,6 +3182,7 @@ input, select, textarea {
 
 			#header {
 				padding: 1em 2em 1em 2em;
+				width: 100%;
 			}
 
 				#header h1 {
@@ -3244,7 +3226,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 1em 2em 1em 2em;
+				padding: 0em 1em 0em 1em;
 			}
 
 				#header h1 br {
