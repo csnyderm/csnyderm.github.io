@@ -2161,11 +2161,11 @@ input, select, textarea {
 	ul {
 		list-style: none;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
+		/*padding-left: 1em;*/
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			/*padding-left: 0.5em;*/
 		}
 
 		ul.alt {
@@ -2175,7 +2175,7 @@ input, select, textarea {
 
 			ul.alt li {
 				border-top: solid 2px #efefef;
-				padding: 0.5em 0;
+				/*padding: 0.5em 0;*/
 			}
 
 				ul.alt li:first-child {
