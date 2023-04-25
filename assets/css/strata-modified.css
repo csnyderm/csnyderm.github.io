@@ -37,6 +37,13 @@ ol, ul {
 	list-style: none;
 }
 
+span {
+	display: none;
+}
+label {
+	display: none !important;
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -1802,7 +1809,7 @@ input, select, textarea {
 
 	label {
 		color: #787878;
-		display: block;
+		display: none !important;
 		font-size: 0.9em;
 		font-weight: 400;
 		margin: 0 0 1em 0;
