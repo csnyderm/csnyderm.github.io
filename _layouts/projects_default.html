@@ -12,27 +12,83 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tailwind.css" />-->
 		<!--<script src="https://cdn.tailwindcss.com"></script>-->
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/strata-modified.css" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/about-me.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload bg-slate-900">
 
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="index" class="image avatar"><img src="assets/images/avatar.jpg" alt="" /></a>
-					<h1><strong>I am Cole Snyder,</strong><br /> a student studying computer security.</h1>
+		<header id="header" class="flex justify-center rounded-3xl invisible md:visible w-6/12 lg:w-4/12 !top-8">
+			<div class="inner">
+				<ul class="grid grid-cols-2 md:grid-cols-5 text-center place-items-center dark:ring-white/10 justify-items-stretch">
+					<a href="index" class="text-sm border-none">
+						<li>
+						Home
+						</li>
+					</a>
+					<a href="about_me" class="text-sm border-none">
+						<li>
+						About Me
+						</li>
+					</a>
+					<li>
+						<a href="index" class="image avatar block align-middle"><img src="assets/images/avatar.jpg" alt="" /></a>
+					</li>
+					<a href="projects" class="text-sm border-none">
+						<li>
+						Projects
+						</li>
+					</a>
+					<a href="BI_program" class="text-sm border-none">
+						<li>
+						Bachelor of Innovation
+						</li>
+					</a>
+				</ul>
 
-					<ul class="text-lg md:text-md xl:text-2xl">
-						<li><a href="index" class="border-none">Home</a></li>
-						<li><a href="about_me" class="border-none">About Me</a></li>
-						<li><a href="projects" class="border-none">Projects</a></li>
-						<li><a href="BI_program" class="border-none">Bachelor of Innovation</a></li>
-					</ul>
-				</div>
+			</div>
+		</header>
 
-				
-			</header>
+		<header id="header" class="flex justify-center md:rounded-3xl block md:!hidden rounded-none w-full">
+			<div class="inner">
+				<ul class="grid grid-cols-4 text-center place-items-center dark:ring-white/10 justify-items-stretch">
+					<a href="index" class="text-sm border-none">
+						<li>
+						Home
+						</li>
+					</a>
+					<a href="about_me" class="text-sm border-none">
+						<li>
+						About Me
+						</li>
+					</a>
+					<a href="projects" class="text-sm border-none">
+						<li>
+						Projects
+						</li>
+					</a>
+					<a href="BI_program" class="text-sm border-none">
+						<li>
+						Bachelor of Innovation
+						</li>
+					</a>
+				</ul>
+
+			</div>
+		</header>
+
+		
+
+		<header id="header" class="!relative !invisible">
+			<div class="inner grid grid-cols-5 text-center place-items-center">
+				<a href="index">Home</a>
+				<a href="about_me">About Me</a>
+				<a href="index" class="image avatar block"><img src="assets/images/avatar.jpg" alt="" /></a>
+				<a href="projects">Projects</a>
+				<a href="BI_program">Bachelor of Innovation</a>
+
+			</div>
+		</header>
 
 		<!-- Main -->
 			<div id="main" class="bg-slate-900">
@@ -42,17 +98,20 @@
 				<!-- Two -->
 					<section id="two" class="">
 						<h1 class="text-white text-center">Recent Projects</h1>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>!-->
 								<h2 class="text-white lower-margin">Networking Socket</h2>
 								<a href="https://github.com/csnyderm/CS4420-Project1" target="_blank" class="text-white underline border-none col-6">Check out the project</a>
 								<p>
-									Developed a simple socket in C that could send messages or files from a client to a server.
+									Developed a simple socket in C that could send plain-text messages or plain-text files from a client to a server over a TCP connection.
 								</p>
 								
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+
+							<br class="hidden lg:block"/>
+
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>-->
 								<h2 class="text-white lower-margin">QTRVSim Extension</h2>
 								<a href="https://github.com/csnyderm/qtrvsim-fall22" target="_blank" class="text-white underline border-none col-6">Check out the project</a>
@@ -62,7 +121,7 @@
 								</p>
 								<span class="absolute bottom-0 h-6"></span>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>-->
 								<h2 class="text-white lower-margin">Microsoft PowerBI Dashboard</h2>
 								<a href="mailto:cole.snyder.m@gmail.com" target="_blank" class="text-white underline border-none col-6">Reach out for more details</a>
@@ -72,7 +131,10 @@
 									to ensure the dashboard met their needs and to implement new displays that were required.
 								</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+
+							<br class="hidden lg:block"/>
+
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>-->
 								<h2 class="text-white lower-margin">Product Patent & Documentation</h2>
 								<a href="mailto:cole.snyder.m@gmail.com" target="_blank" class="text-white underline border-none col-6">Reach out for more details</a>
@@ -80,7 +142,7 @@
 									Helped develop a patent for a client's project in a team of four. Worked to recover the CAD and design files to allow client to modify
 									and begin producing the product.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>-->
 								<h2 class="text-white lower-margin">Music Chart Database</h2>
 								<a href="mailto:cole.snyder.m@gmail.com" target="_blank" class="text-white underline border-none col-6">Reach out for more details</a>
@@ -89,7 +151,10 @@
 									Information tracked in the database included the song's name, writers, performers, date, and more.
 								</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+
+							<br class="hidden lg:block"/>
+
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>-->
 								<h2 class="text-white lower-margin">Cybersecurity VR Game</h2>
 								<a href="mailto:cole.snyder.m@gmail.com" target="_blank" class="text-white underline border-none col-6">Reach out for more details</a>
@@ -98,7 +163,7 @@
 									elementary school to high school. Worked closely with team members as someone knowledgeable in the concepts to develop mini-games and implement them.
 								</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>-->
 								<h2 class="text-white lower-margin">Web Development using Ruby on Rails</h2>
 								<a href="https://github.com/csnyderm/cs3300" target="_blank" class="text-white underline border-none col-6">Check out the project</a>
@@ -108,7 +173,10 @@
 									Worked on both the front-end and back-end, as well as setting up and validating tests.
 								</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+
+							<br class="hidden lg:block"/>
+
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>-->
 								<h2 class="text-white lower-margin">Web Development using Django</h2>
 								<a href="https://github.com/csnyderm/CoalMine-Rebuilt" target="_blank" class="text-white underline border-none col-6">Check out the project</a>
@@ -118,7 +186,7 @@
 									a Postgres database in the background.
 								</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>-->
 								<h2 class="text-white lower-margin">Patent Development</h2>
 								<a href="mailto:cole.snyder.m@gmail.com" target="_blank" class="text-white underline border-none col-6">Reach out for more details</a>
@@ -128,7 +196,10 @@
 									to be patented including the specification document and filing for micro entity status.
 								</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+
+							<br class="hidden lg:block"/>
+
+							<article class="col-span-1 md:col-span-2 work-item shadow-black shadow-inner shadow-lg pl-4 pr-2">
 								<!--<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>-->
 								<h2 class="text-white lower-margin">Penetration Test</h2>
 								<a href="mailto:cole.snyder.m@gmail.com" target="_blank" class="text-white underline border-none col-6">Reach out for more details</a>
@@ -159,8 +230,8 @@
 							<div class="col-8 col-12-small">
 								<form method="post" action="#">
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-span-2"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-span-2"><input type="email" name="email" id="email" placeholder="Email" /></div>
 										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
 								</form>
@@ -224,7 +295,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						<section>
 							<h4>Lists</h4>
 							<div class="row">
-								<div class="col-6 col-12-xsmall">
+								<div class="col-span-2">
 									<h5>Unordered</h5>
 									<ul>
 										<li>Dolor pulvinar etiam magna etiam.</li>
@@ -238,7 +309,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										<li>Felis enim feugiat dolore viverra.</li>
 									</ul>
 								</div>
-								<div class="col-6 col-12-xsmall">
+								<div class="col-span-2">
 									<h5>Ordered</h5>
 									<ol>
 										<li>Dolor pulvinar etiam magna etiam.</li>
@@ -424,10 +495,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							<h4>Form</h4>
 							<form method="post" action="#">
 								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
+									<div class="col-span-2">
 										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
 									</div>
-									<div class="col-6 col-12-xsmall">
+									<div class="col-span-2">
 										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
 									</div>
 									<div class="col-12">
@@ -500,18 +571,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/cole-snyder-m/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/csnyderm" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
-						<li><a href="mailto:cole.snyder.m@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Developed by Cole Snyder</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+		<footer class="footer">
+			<div>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/cole-snyder-m/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/csnyderm" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+					<li><a href="mailto:cole.snyder.m@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+				</ul>
+				<p>Developed by Cole Snyder</p>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
